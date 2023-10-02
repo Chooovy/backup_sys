@@ -2,6 +2,9 @@
 #include <fstream>
 #include <string>
 #include <openssl/evp.h>
+#include <cstring>
+
+#define AES_BLOCK_SIZE 16
 
 class Encrypt {
     public:

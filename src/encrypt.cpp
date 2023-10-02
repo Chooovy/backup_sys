@@ -7,7 +7,7 @@ Encrypt::Encrypt() {
 }
 
 Encrypt::~Encrypt() {
-    
+
 }
 
 bool Encrypt::encryptFile(const std::string& inputFile, const std::string& outputFile, const std::string& key) {
@@ -68,6 +68,29 @@ bool Encrypt::decryptFile(const std::string& inputFile, const std::string& outpu
     int bytesRead;
     int decryptedBytes;
 
+    //读取前16字节并解密以进行密码验证
+    // if ((bytesRead = inFile.readsome(reinterpret_cast<char*>(inputBuffer), AES_BLOCK_SIZE)) != AES_BLOCK_SIZE) {
+    //     EVP_CIPHER_CTX_free(ctx);
+    //     std::cerr << "Invalid input file format." << std::endl;
+    //     return false;
+    // }
+
+    // if (EVP_DecryptUpdate(ctx, outputBuffer, &decryptedBytes, inputBuffer, bytesRead) != 1) {
+    //     EVP_CIPHER_CTX_free(ctx);
+    //     return false;
+    // }
+    // std::cout << "Decrypted 16 bytes: ";
+    // for (int i = 0; i < AES_BLOCK_SIZE; i++) {
+    //     std::cout << std::hex << static_cast<int>(outputBuffer[i]);
+    // }
+    // std::cout << std::endl;
+    // if (memcmp(key.c_str(), outputBuffer, AES_BLOCK_SIZE) != 0) {
+    //     EVP_CIPHER_CTX_free(ctx);
+    //     std::cerr << "Invalid password." << std::endl;
+    //     return false;
+    // }
+
+    // 继续解密文件的其余部分
     while ((bytesRead = inFile.readsome(reinterpret_cast<char*>(inputBuffer), bufferSize)) > 0) {
         if (EVP_DecryptUpdate(ctx, outputBuffer, &decryptedBytes, inputBuffer, bytesRead) != 1) {
             EVP_CIPHER_CTX_free(ctx);
@@ -86,26 +109,3 @@ bool Encrypt::decryptFile(const std::string& inputFile, const std::string& outpu
     std::cout << "decryt success" << std::endl;
     return true;
 }
-
-// int main() {
-//     std::string inputFile = "./1.txt"; // 替换为你的输入文件
-//     std::string encryptedFile = "./encrypted.bin"; // 替换为加密后的输出文件
-//     std::string decryptedFile = "./decrypted.txt"; // 替换为解密后的输出文件
-//     std::string key = "5464"; // 替换为你的加密密钥
-
-//     // 加密文件
-//     if (encryptFile(inputFile, encryptedFile, key)) {
-//         std::cout << "File is encrypted." << std::endl;
-//     } else {
-//         std::cerr << "Fail to encrypt" << std::endl;
-//     }
-
-//     // 解密文件
-//     if (decryptFile(encryptedFile, decryptedFile, key)) {
-//         std::cout << "File is decrypted." << std::endl;
-//     } else {
-//         std::cerr << "Fail to decrypt." << std::endl;
-//     }
-
-//     return 0;
-// }
