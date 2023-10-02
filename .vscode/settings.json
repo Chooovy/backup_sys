@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "queue": "cpp",
+        "fstream": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/marcus/backup_sys"
+}

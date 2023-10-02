@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/marcus/backup_sys/build",
+  "command": "/usr/bin/g++  -I/home/marcus/backup_sys/include -g -o CMakeFiles/backup_sys.dir/src/compress.cpp.o -c /home/marcus/backup_sys/src/compress.cpp",
+  "file": "/home/marcus/backup_sys/src/compress.cpp"
+},
+{
+  "directory": "/home/marcus/backup_sys/build",
+  "command": "/usr/bin/g++  -I/home/marcus/backup_sys/include -g -o CMakeFiles/backup_sys.dir/src/do.cpp.o -c /home/marcus/backup_sys/src/do.cpp",
+  "file": "/home/marcus/backup_sys/src/do.cpp"
+},
+{
+  "directory": "/home/marcus/backup_sys/build",
+  "command": "/usr/bin/g++  -I/home/marcus/backup_sys/include -g -o CMakeFiles/backup_sys.dir/src/encrypt.cpp.o -c /home/marcus/backup_sys/src/encrypt.cpp",
+  "file": "/home/marcus/backup_sys/src/encrypt.cpp"
+},
+{
+  "directory": "/home/marcus/backup_sys/build",
+  "command": "/usr/bin/g++  -I/home/marcus/backup_sys/include -g -o CMakeFiles/backup_sys.dir/src/main.cpp.o -c /home/marcus/backup_sys/src/main.cpp",
+  "file": "/home/marcus/backup_sys/src/main.cpp"
+},
+{
+  "directory": "/home/marcus/backup_sys/build",
+  "command": "/usr/bin/g++  -I/home/marcus/backup_sys/include -g -o CMakeFiles/backup_sys.dir/src/tar.cpp.o -c /home/marcus/backup_sys/src/tar.cpp",
+  "file": "/home/marcus/backup_sys/src/tar.cpp"
+}
+]

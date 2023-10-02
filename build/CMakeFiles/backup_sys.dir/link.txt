@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/backup_sys.dir/src/compress.cpp.o CMakeFiles/backup_sys.dir/src/do.cpp.o CMakeFiles/backup_sys.dir/src/encrypt.cpp.o CMakeFiles/backup_sys.dir/src/main.cpp.o CMakeFiles/backup_sys.dir/src/tar.cpp.o -o backup_sys  /usr/lib/x86_64-linux-gnu/libcrypto.a -ldl 
