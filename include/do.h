@@ -21,7 +21,7 @@ public:
     Do(std::string src_path_, std::string bak_path_);
     ~Do();
 
-    // void SetVerbose(bool verbose_);
+    void SetVerbose(bool verbose_);
 
     // ±¸·Ý
     bool Backup(std::string password);

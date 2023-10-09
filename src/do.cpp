@@ -36,10 +36,10 @@ Do::~Do()
 //     filter = filter_;
 // }
 
-// void Task::SetVerbose(bool verbose_)
-// {
-//     verbose = verbose_;
-// }
+void Do::SetVerbose(bool verbose_)
+{
+    verbose = verbose_;
+}
 
 // void Task::RestoreMetadata(bool restore_metadata_)
 // {
@@ -66,7 +66,6 @@ bool Do::Backup(std::string password)
     // ´ò°ü
     if (verbose)
         std::cout << "PACKING..." << std::endl;
-    // Packer packer(src_path, bak_path, filter, verbose);
     
     std::string src_path_ = src_path.string();
     std::string bak_path_ = bak_path.string();
@@ -82,8 +81,6 @@ bool Do::Backup(std::string password)
     {
         if (verbose)
             std::cout << "COMPRESSING..." << std::endl;
-        // Ñ¹Ëõ
-        // Compressor compressor(bak_path);
         Compress compressor;
         if (!compressor.compressFile( (bak_path_ + ".tar"), (bak_path_ + ".huf") ))
         {
