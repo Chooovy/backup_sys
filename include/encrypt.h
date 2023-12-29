@@ -3,7 +3,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-
+#include <cstdlib> 
 #define AES_BLOCK_SIZE 16
 
 class Encrypt {
@@ -15,10 +15,6 @@ class Encrypt {
     Encrypt();
     ~Encrypt();
 
-    bool encryptFile(const std::string& input_file,
-                     const std::string& output_file,
-                     const std::string& key);
-    bool decryptFile(const std::string& input_file,
-                     const std::string& output_file,
-                     const std::string& key);
+    bool encryptFile(const std::string& inputFilePath, const std::string& outputFilePath, const std::string& key);
+    bool decryptFile(const std::string& inputFilePath, const std::string& outputFilePath, const std::string& key);
 };

@@ -23,9 +23,7 @@ int main()
     //     std::filesystem::path file_path = dir_path / file_name;
     //     std::filesystem::remove(file_path);
     // }
-
-    bool de = encrypter.decryptFile("./backup.tar.gz.ec",
-                                    "./1.bmp", "1");
+    bool de = encrypter.decryptFile("./1.txt","./3.txt", "1");
     std::cout << de << std::endl;
     // compressor.decompressFile("./backup.tar.gz",
     //                           "./backup.tar");
