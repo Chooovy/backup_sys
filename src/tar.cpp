@@ -1,11 +1,8 @@
 #include "tar.h"
+Tar::Tar(){}
+Tar::~Tar(){}
 
-Tar::Tar() {}
-
-Tar::~Tar() {}
-
-bool Tar::pack(const std::string& input_path,
-               const std::string& tar_file_name) {
+bool Tar::pack(const std::string& input_path,const std::string& tar_file_name) {
     // 创建tar文件并打开以写入模式
     std::ofstream fout(tar_file_name, std::ios::out | std::ios::binary);
     if (!fout) {
@@ -32,15 +29,19 @@ void Tar::pack(const std::filesystem::path& path, std::ofstream& fout) {
 
             struct stat file_stat;
 
-            if (entry.is_directory()) {
+            if (entry.is_directory()) 
+            {
                 // 如果是目录，递归打包子目录
                 getTarHeader(entry_path, entry_name, header, file_stat);
                 pack(entry_path, fout);
-            } else {
+            } 
+            else 
+            {
                 // 如果是文件，打包文件内容
                 std::ifstream fin(entry_path, std::ios::binary);
 
-                if (!fin) {
+                if (!fin) 
+                {
                     std::cerr << "Failed to open " << entry_path << std::endl;
                     continue;
                 }
@@ -52,12 +53,14 @@ void Tar::pack(const std::filesystem::path& path, std::ofstream& fout) {
                 // 逐个字节地从输入文件读取内容并写入tar文件
                 char buffer;
                 int padding = 0;
-                while (fin.get(buffer)) {
+                while (fin.get(buffer)) 
+                {
                     fout.put(buffer);
                     padding += 1;
                 }
                 buffer = 0;
-                while (padding % 512 != 0) {
+                while (padding % 512 != 0) 
+                {
                     fout.put(buffer);
                     padding++;
                 }
@@ -71,7 +74,8 @@ void Tar::pack(const std::filesystem::path& path, std::ofstream& fout) {
         tarWrite(fout, end_header);
         tarWrite(fout, end_header);
         delete end_header;
-    } else {
+    }
+    else {
         const std::string entry_path = path.string();
         const std::string entry_name = path.filename().string();
 

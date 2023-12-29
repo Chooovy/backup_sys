@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libcompress.so -o ../lib/libcompress.so CMakeFiles/compress.dir/src/compress.cpp.o 

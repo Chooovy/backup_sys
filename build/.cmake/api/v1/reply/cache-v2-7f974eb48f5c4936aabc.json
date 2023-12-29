@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/marcus/backup_sys/build"
+			"value" : "/home/george/projects/backup_sys/build"
 		},
 		{
 			"name" : "Backup_sys_IS_TOP_LEVEL",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/marcus/backup_sys"
+			"value" : "/home/george/projects/backup_sys"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/marcus/backup_sys/build"
+			"value" : "/home/george/projects/backup_sys/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -631,7 +631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/marcus/backup_sys"
+			"value" : "/home/george/projects/backup_sys"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/marcus/backup_sys/lib/libcrypto.so"
+			"value" : "/usr/lib/x86_64-linux-gnu/libcrypto.so"
 		},
 		{
 			"name" : "SSL",
@@ -1179,7 +1179,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/marcus/backup_sys/lib/libssl.so"
+			"value" : "/usr/lib/x86_64-linux-gnu/libssl.so"
 		},
 		{
 			"name" : "encrypt_LIB_DEPENDS",
@@ -1191,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "general;/home/marcus/backup_sys/lib/libssl.so;general;/home/marcus/backup_sys/lib/libcrypto.so;"
+			"value" : "general;/usr/lib/x86_64-linux-gnu/libssl.so;general;/usr/lib/x86_64-linux-gnu/libcrypto.so;"
 		}
 	],
 	"kind" : "cache",

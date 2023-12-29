@@ -15,7 +15,7 @@
 #include "header.h"
 
 class Tar {
-   public:
+    public:
     std::string input_path;
     std::string tar_file_name;
 

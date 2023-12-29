@@ -1,6 +1,0 @@
-/home/marcus/backup_sys/build/CMakeFiles/tar.dir
-/home/marcus/backup_sys/build/CMakeFiles/compress.dir
-/home/marcus/backup_sys/build/CMakeFiles/encrypt.dir
-/home/marcus/backup_sys/build/CMakeFiles/main.dir
-/home/marcus/backup_sys/build/CMakeFiles/edit_cache.dir
-/home/marcus/backup_sys/build/CMakeFiles/rebuild_cache.dir

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/marcus/backup_sys/lib/libcompress.so"
+			"path" : "/home/george/projects/backup_sys/lib/libcompress.so"
 		}
 	],
 	"backtrace" : 1,
@@ -61,11 +61,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/marcus/backup_sys/include"
+					"path" : "/home/george/projects/backup_sys/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/marcus/backup_sys/include/openssl"
+					"path" : "/home/george/projects/backup_sys/include/openssl"
 				}
 			],
 			"language" : "CXX",

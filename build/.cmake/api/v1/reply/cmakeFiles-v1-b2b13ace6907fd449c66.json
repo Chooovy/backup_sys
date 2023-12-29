@@ -713,8 +713,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/marcus/backup_sys/build",
-		"source" : "/home/marcus/backup_sys"
+		"build" : "/home/george/projects/backup_sys/build",
+		"source" : "/home/george/projects/backup_sys"
 	},
 	"version" : 
 	{

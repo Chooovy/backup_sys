@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/marcus/backup_sys/bin/main"
+			"path" : "/home/george/projects/backup_sys/bin/main"
 		}
 	],
 	"backtrace" : 1,
@@ -62,11 +62,11 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/marcus/backup_sys/include"
+					"path" : "/home/george/projects/backup_sys/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/marcus/backup_sys/include/openssl"
+					"path" : "/home/george/projects/backup_sys/include/openssl"
 				}
 			],
 			"language" : "CXX",
@@ -113,7 +113,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/marcus/backup_sys/lib",
+				"fragment" : "-Wl,-rpath,/home/george/projects/backup_sys/lib",
 				"role" : "libraries"
 			},
 			{
@@ -132,11 +132,11 @@
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "../lib/libssl.so",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libssl.so",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "../lib/libcrypto.so",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcrypto.so",
 				"role" : "libraries"
 			}
 		],

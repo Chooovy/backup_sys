@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/marcus/backup_sys/lib/libencrypt.so"
+			"path" : "/home/george/projects/backup_sys/lib/libtar.so"
 		}
 	],
 	"backtrace" : 1,
@@ -11,7 +11,6 @@
 		"commands" : 
 		[
 			"add_library",
-			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
@@ -26,23 +25,17 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 23,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 37,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
 				"line" : 17,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 0,
 				"line" : 18,
 				"parent" : 0
@@ -61,18 +54,18 @@
 			"defines" : 
 			[
 				{
-					"define" : "encrypt_EXPORTS"
+					"define" : "tar_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
-					"path" : "/home/marcus/backup_sys/include"
+					"backtrace" : 2,
+					"path" : "/home/george/projects/backup_sys/include"
 				},
 				{
-					"backtrace" : 4,
-					"path" : "/home/marcus/backup_sys/include/openssl"
+					"backtrace" : 3,
+					"path" : "/home/george/projects/backup_sys/include/openssl"
 				}
 			],
 			"language" : "CXX",
@@ -90,7 +83,7 @@
 			]
 		}
 	],
-	"id" : "encrypt::@6890427a1f51a3e7e1df",
+	"id" : "tar::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -98,26 +91,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-Wl,-rpath,/home/marcus/backup_sys/lib",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "../lib/libssl.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "../lib/libcrypto.so",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "encrypt",
-	"nameOnDisk" : "libencrypt.so",
+	"name" : "tar",
+	"nameOnDisk" : "libtar.so",
 	"paths" : 
 	{
 		"build" : ".",
@@ -138,7 +117,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/encrypt.cpp",
+			"path" : "src/tar.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
