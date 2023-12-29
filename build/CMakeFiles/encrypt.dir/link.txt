@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libencrypt.so -o ../lib/libencrypt.so CMakeFiles/encrypt.dir/src/encrypt.cpp.o  -Wl,-rpath,/home/marcus/backup_sys/lib ../lib/libssl.so ../lib/libcrypto.so 
