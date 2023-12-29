@@ -38,3 +38,10 @@ target_link_libraries(encrypt ${SSL} ${CRYPTO})
 
 # 添加链接动态库
 target_link_libraries(main ${LIB})
+
+#开启测试
+###########################################################
+#添加库文件
+enable_testing()
+add_subdirectory(testbench)
+###########################################################
