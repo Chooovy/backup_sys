@@ -21,12 +21,13 @@ include_directories(${PROJECT_SOURCE_DIR}/include/openssl)
 add_library(tar SHARED src/tar.cpp)
 add_library(compress SHARED src/compress.cpp)
 add_library(encrypt SHARED src/encrypt.cpp)
+add_library(backupfilter SHARED src/BackupManager.cpp)
 
 # 收集源文件
 set(SOURCES src/main.cpp)
 
 # 增加链接库位置
-set(LIB tar compress encrypt)
+set(LIB tar compress encrypt backupfilter)
 
 # 创建可执行文件
 add_executable(main ${SOURCES})
